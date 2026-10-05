@@ -9,13 +9,13 @@ index.html    — all page content (single-page site)
 styles.css    — all styles; uses CSS custom properties (variables) at the top
 README.md     — human-readable deploy/edit guide for the site owner
 CLAUDE.md     — this file
-images/       — (optional) locally-hosted images go here
+images/       — all site images, served locally
 ```
 
 ## Key design decisions
 
 - **Single HTML file** — intentional. Rohit should be able to find and edit any text by searching `index.html`.
-- **Images are currently hotlinked** from `static.wixstatic.com`. This works but is fragile. Prefer downloading them to `images/` when helping with updates.
+- **Images are hosted locally** in `images/`, as the original full-size files from the old Wix site (about 17 MB total, not yet compressed). Do not hotlink from `static.wixstatic.com`; add new images to `images/`.
 - **No build step, no framework, no bundler.** Keep it that way unless the owner explicitly asks for one.
 - **CSS variables** in `:root` at the top of `styles.css` control all colours and fonts. Change those first when restyling.
 
@@ -64,10 +64,9 @@ Copy a `<div class="project-block">` and update the badge year, title, descripti
 **Change a social link URL:**
 Find the `<footer>` and update the `href` on the relevant `<a>` tag.
 
-**Replace a Wix CDN image with a local file:**
-1. Download the image
-2. Place it in `images/`
-3. Change `src="https://static.wixstatic.com/..."` to `src="images/filename.jpg"`
+**Replace or add an image:**
+1. Place the file in `images/`
+2. Set `src="images/filename.jpg"` on the relevant `<img>` in `index.html`
 
 ## What NOT to do
 

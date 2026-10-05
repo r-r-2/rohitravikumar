@@ -30,20 +30,14 @@ Open `index.html` in any text editor and search for the section you want to upda
 
 ---
 
-## How to replace images (recommended for long-term hosting)
+## How to replace images
 
-Currently, images are loaded from the old Wix CDN (`static.wixstatic.com`). If the Wix account is ever closed, those URLs will break.
+All images are stored in the `images/` folder and served with the site — nothing is loaded from Wix any more. They are the original full-size files (about 17 MB in total) and have not been compressed yet.
 
-**To host images yourself:**
+**To replace or add an image:**
 
-1. Create an `images/` folder in this project
-2. Download each image from its Wix URL (open the URL in a browser, save the file)
-3. Place the file in `images/`, e.g. `images/hero-landscape.jpg`
-4. In `index.html`, change:
-   ```html
-   src="https://static.wixstatic.com/media/2a1230_fe54a2...jpg"
-   ```
-   to:
+1. Place the new file in `images/`, e.g. `images/hero-landscape.jpg`
+2. In `index.html`, point the relevant `<img>` at it:
    ```html
    src="images/hero-landscape.jpg"
    ```
@@ -86,7 +80,7 @@ rohitravikumar/
 ├── styles.css      ← all visual styles
 ├── README.md       ← this file
 ├── CLAUDE.md       ← instructions for AI-assisted editing
-└── images/         ← (create this folder when you download images locally)
+└── images/         ← all site images (original full-size files)
 ```
 
 ---
