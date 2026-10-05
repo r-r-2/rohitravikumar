@@ -32,15 +32,29 @@ Open `index.html` in any text editor and search for the section you want to upda
 
 ## How to replace images
 
-All images are stored in the `images/` folder and served with the site — nothing is loaded from Wix any more. They are the original full-size files (about 17 MB in total) and have not been compressed yet.
+All images are stored in the `images/` folder and served with the site — nothing is loaded from Wix.
+
+- `images/*.webp` — the compressed files the page actually loads (about 1 MB in total)
+- `images/originals/` — the full-size originals (about 17 MB), kept as the source for re-exporting; the page never loads these
 
 **To replace or add an image:**
 
-1. Place the new file in `images/`, e.g. `images/hero-landscape.jpg`
-2. In `index.html`, point the relevant `<img>` at it:
+1. Export the image as WebP at roughly the width listed below and place it in `images/`, e.g. `images/collage-sunset.webp`
+2. In `index.html`, point the relevant `<img>` at it and update `width` and `height` to the file's pixel size:
    ```html
-   src="images/hero-landscape.jpg"
+   src="images/collage-sunset.webp"
+   width="800" height="533"
    ```
+
+| Image type | File name prefix | Width |
+|---|---|---|
+| Hero photos | `hero-` | 640, 1024, 1600 and 2000 px (one file each, listed in `srcset`) |
+| Collage photos | `collage-` | 800 px |
+| Channel cards | `channel-` | 1000 px |
+| Film project images | `project-` | 960 px |
+| App icons | `icon-` | 240 px |
+
+The two hero photos are the only images with several sizes; the browser picks one based on screen width. When replacing a hero photo, replace all four files.
 
 ---
 
@@ -80,7 +94,8 @@ rohitravikumar/
 ├── styles.css      ← all visual styles
 ├── README.md       ← this file
 ├── CLAUDE.md       ← instructions for AI-assisted editing
-└── images/         ← all site images (original full-size files)
+└── images/         ← compressed WebP images used by the page
+    └── originals/  ← full-size source files (not loaded by the page)
 ```
 
 ---

@@ -9,13 +9,16 @@ index.html    — all page content (single-page site)
 styles.css    — all styles; uses CSS custom properties (variables) at the top
 README.md     — human-readable deploy/edit guide for the site owner
 CLAUDE.md     — this file
-images/       — all site images, served locally
+images/       — compressed WebP images used by the page
+images/originals/ — full-size source files; never referenced by the page
 ```
 
 ## Key design decisions
 
 - **Single HTML file** — intentional. Rohit should be able to find and edit any text by searching `index.html`.
-- **Images are hosted locally** in `images/`, as the original full-size files from the old Wix site (about 17 MB total, not yet compressed). Do not hotlink from `static.wixstatic.com`; add new images to `images/`.
+- **Images are hosted locally** in `images/` as WebP (about 1 MB total), with no JPEG/PNG fallback. Full-size originals live in `images/originals/` and are only a source for re-exporting. Do not hotlink from `static.wixstatic.com`.
+- **Only the two hero photos are responsive** (`srcset` at 640/1024/1600/2000 px). They are cropped by `object-fit: cover` and render about 75vw wide on desktop, which is why `sizes` says `75vw` rather than the grid column width. Every other image is a single file.
+- **Every `<img>` has `width` and `height`** matching its file, to prevent layout shift. Keep them in sync when swapping a file.
 - **No build step, no framework, no bundler.** Keep it that way unless the owner explicitly asks for one.
 - **CSS variables** in `:root` at the top of `styles.css` control all colours and fonts. Change those first when restyling.
 
@@ -65,8 +68,9 @@ Copy a `<div class="project-block">` and update the badge year, title, descripti
 Find the `<footer>` and update the `href` on the relevant `<a>` tag.
 
 **Replace or add an image:**
-1. Place the file in `images/`
-2. Set `src="images/filename.jpg"` on the relevant `<img>` in `index.html`
+1. Put the full-size source in `images/originals/`
+2. Export a WebP to `images/` at the width for its type: collage 800, channel 1000, project 960, icon 240; hero at 640, 1024, 1600 and 2000 (named `hero-name-WIDTH.webp`)
+3. Set `src` (and `srcset` for hero photos) plus `width`/`height` on the `<img>` in `index.html`
 
 ## What NOT to do
 
