@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Worklog | Rohit Ravikumar</title>
-  <meta name="description" content="Rohit Ravikumar's worklog — what he's shooting, cutting and directing, as it happens.">
+  <meta name="description" content="Rohit Ravikumar’s worklog: what he’s shooting, cutting and directing, as it happens.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;700;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400&family=Questrial&display=swap" rel="stylesheet">
@@ -24,17 +24,17 @@
      worklog.js does the filtering and counting.
 ═══════════════════════════════════════════ -->
 <div class="wl-wrap">
-  <a class="wl-back" href="index.html">← rohitravikumar.com</a>
+  <a class="wl-back" href="index.html">Back to rohitravikumar.com</a>
 
   <header class="wl-header">
     <h1 class="wl-title">ROHIT’S WORKLOG</h1>
-    <p class="wl-tagline">what i'm shooting, cutting and directing, as it happens.</p>
+    <p class="wl-tagline">what i’m shooting, cutting and directing, as it happens.</p>
   </header>
 
   <div class="wl-roll mono muted">
     <span>Roll 01</span>
-    <span>12 Frames</span>
-    <span>2021 — Now</span>
+    <span>12 frames</span>
+    <span>2021 to now</span>
   </div>
 
   <!-- Year timeline: one block per frame. Click a year to filter. -->
@@ -74,18 +74,18 @@
 
   <!-- Role filters -->
   <div class="chips" role="group" aria-label="Filter by role">
-      <button type="button" class="chip" data-role="all" aria-pressed="false">ALL</button>
-      <button type="button" class="chip" data-role="photography" aria-pressed="false">PHOTOGRAPHY</button>
-      <button type="button" class="chip" data-role="videography" aria-pressed="false">VIDEOGRAPHY</button>
-      <button type="button" class="chip" data-role="edit" aria-pressed="false">EDIT</button>
-      <button type="button" class="chip" data-role="direction" aria-pressed="false">DIRECTION</button>
+      <button type="button" class="chip" data-role="all" aria-pressed="false">All</button>
+      <button type="button" class="chip" data-role="photography" aria-pressed="false">Photography</button>
+      <button type="button" class="chip" data-role="videography" aria-pressed="false">Videography</button>
+      <button type="button" class="chip" data-role="edit" aria-pressed="false">Edit</button>
+      <button type="button" class="chip" data-role="direction" aria-pressed="false">Direction</button>
   </div>
 
   <div class="wl-bar">
     <span class="mono muted">Showing <span id="wl-count">6 frames</span></span>
     <button type="button" class="collapse-btn" id="wl-collapse" aria-pressed="false">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16"/><path d="M8 5l4 4 4-4"/><path d="M8 19l4-4 4 4"/></svg>
-      <span id="wl-collapse-label">COLLAPSE MEDIA</span>
+      <span id="wl-collapse-label">Collapse media</span>
     </button>
   </div>
 </div>
@@ -100,7 +100,7 @@
   <!-- Feed: newest first, grouped by year -->
   <div class="wl-feed">
     <div class="year-head" data-year-head="2026">
-      <span class="year-head-year">2026</span><span class="year-head-rule"></span><span class="year-head-count mono muted" data-year-count="2026">6 FRAMES</span>
+      <span class="year-head-year">2026</span><span class="year-head-rule"></span><span class="year-head-count mono muted" data-year-count="2026">6 frames</span>
     </div>
     <article class="frame" data-frame="012" data-year="2026" data-roles="videography">
       <p class="frame-no"><span class="mono muted">Frame</span><span>012</span></p>
@@ -111,24 +111,24 @@
       <div class="media-pair">
         <a class="media" href="https://www.youtube.com/watch?v=VBzKe_iVA1U" target="_blank" rel="noopener" aria-label="Watch the Harris Jayaraj concert behind-the-scenes video on YouTube (16:08)">
           <img src="images/allrounders-concert-thumb.jpg" alt="Harris Jayaraj concert BTS, video thumbnail" loading="lazy">
-          <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">HARRIS JAYARAJ CONCERT BTS · 16:08</span>
+          <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">Harris Jayaraj concert, behind the scenes (16:08)</span>
         </a>
         <a class="media" href="https://www.youtube.com/watch?v=AEF70qggEu8" target="_blank" rel="noopener" aria-label="Watch the MMA kickboxing video on YouTube (12:57)">
           <img src="images/allrounders-mma-thumb.jpg" alt="We fought an MMA fighter, video thumbnail" loading="lazy">
-          <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">MMA / KICKBOXING · 12:57</span>
+          <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">MMA and kickboxing (12:57)</span>
         </a>
       </div>
-      <p class="frame-with">for allrounders · <a href="https://www.youtube.com/@theallrounderrs" target="_blank" rel="noopener">youtube ↗</a></p>
+      <p class="frame-with">for <a href="https://www.youtube.com/@theallrounderrs" target="_blank" rel="noopener">Allrounders on YouTube</a></p>
     </article>
     <article class="frame" data-frame="011" data-year="2026" data-roles="videography">
       <p class="frame-no"><span class="mono muted">Frame</span><span>011</span></p>
-      <p class="frame-date mono">Mar – Sept 2026</p>
+      <p class="frame-date mono">Mar to Sept 2026</p>
       <div class="badges"><span class="badge">Freelance videographer</span></div>
       <h2>Studio Urli</h2>
       <p class="frame-note">shooting video for a creative studio that works with conscious, sustainable and impact-led brands.</p>
-      <a class="media media--tile" href="https://www.instagram.com/studio_urli/" target="_blank" rel="noopener" aria-label="Studio Urli on Instagram" style="background:#3F6430">
+      <a class="media media--tile" href="https://www.instagram.com/studio_urli/" target="_blank" rel="noopener" aria-label="Studio Urli on Instagram" style="background:var(--color-urli)">
         <img src="images/studio-urli-logo.jpg" alt="Studio Urli logo" loading="lazy">
-        <span class="media-label">INSTAGRAM · @STUDIO_URLI</span>
+        <span class="media-label">@studio_urli on Instagram</span>
       </a>
       <p class="frame-with">for studio urli</p>
     </article>
@@ -140,7 +140,7 @@
       <p class="frame-note">aerial footage of Itanagar in the early monsoon, shot on a DJI Mini 4 Pro for a travel agency in Arunachal Pradesh.</p>
       <a class="media" href="https://www.youtube.com/watch?v=PCIrnsmcK8w" target="_blank" rel="noopener" aria-label="Watch Itanagar calming city view on YouTube (0:42)">
           <img src="images/itanagar-drone-thumb.jpg" alt="Aerial view of Itanagar, video thumbnail" loading="lazy">
-          <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">WATCH · 0:42 · DJI MINI 4 PRO</span>
+          <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">Watch (0:42), shot on a DJI Mini 4 Pro</span>
         </a>
       <p class="frame-with">for a travel agency, itanagar, arunachal pradesh</p>
     </article>
@@ -149,12 +149,12 @@
       <p class="frame-date mono">May 2026</p>
       <div class="badges"><span class="badge">Photography</span><span class="badge">Travel</span></div>
       <h2>Meghalaya</h2>
-      <p class="frame-note">photos from a trip through Meghalaya — mossy gorges, waterfalls, caves and misty hills.</p>
+      <p class="frame-note">photos from a trip through Meghalaya: mossy gorges, waterfalls, caves and misty hills.</p>
       <div class="media-pair media-pair--photos">
         <a href="https://flic.kr/s/aHBqjD36aP" target="_blank" rel="noopener" aria-label="Open the album on Flickr"><img src="images/meghalaya-gorge.jpg" alt="A waterfall falling into a mossy gorge in Meghalaya" loading="lazy"></a>
         <a href="https://flic.kr/s/aHBqjD36aP" target="_blank" rel="noopener" aria-label="Open the album on Flickr"><img src="images/meghalaya-tree.jpg" alt="A lone tree on a hilltop with people silhouetted beneath it, Meghalaya" loading="lazy"></a>
       </div>
-      <div class="ep-links"><a class="ep-link ep-link--main" href="https://flic.kr/s/aHBqjD36aP" target="_blank" rel="noopener">Full album on Flickr · 26 photos ↗</a></div>
+      <div class="ep-links"><a class="ep-link ep-link--main" href="https://flic.kr/s/aHBqjD36aP" target="_blank" rel="noopener">The full album on Flickr (26 photos)</a></div>
     </article>
     <article class="frame" data-frame="008" data-year="2026" data-roles="videography edit">
       <p class="frame-no"><span class="mono muted">Frame</span><span>008</span></p>
@@ -165,7 +165,7 @@
       <div class="media-pair media-pair--reel">
         <figure class="media-reel">
           <video src="images/gfa-showreel.mp4" poster="images/gfa-showreel-poster.jpg" controls playsinline preload="none" aria-label="Genius Fitness Arena trainer showreel (0:52)"></video>
-          <figcaption>TRAINER SHOWREEL · 0:52</figcaption>
+          <figcaption>Trainer showreel (0:52)</figcaption>
         </figure>
         <div class="media-tile media-tile--dark"><img src="images/genius-fitness-arena-logo.png" alt="Genius Fitness Arena logo" loading="lazy"></div>
       </div>
@@ -180,29 +180,29 @@
       <div class="media-pair media-pair--reel">
         <figure class="media-reel">
           <video src="images/zohaib-reel.mp4" poster="images/zohaib-reel-poster.jpg" controls playsinline preload="none" aria-label="Reel sample for Mohammed Zohaib: three big markets (0:28)"></video>
-          <figcaption>REEL SAMPLE · 0:28</figcaption>
+          <figcaption>Reel sample (0:28)</figcaption>
         </figure>
         <a class="media media--mono" href="https://www.youtube.com/@MohammedZohaib86" target="_blank" rel="noopener" aria-label="Watch Mohammed Zohaib on YouTube">
-          <span class="media-mono" aria-hidden="true">MZ</span><span class="media-label">YOUTUBE · MOHAMMED ZOHAIB</span>
+          <span class="media-mono" aria-hidden="true">MZ</span><span class="media-label">Mohammed Zohaib on YouTube</span>
         </a>
       </div>
-      <p class="frame-with">for mohammed zohaib, dubai — cut remotely</p>
+      <p class="frame-with">for mohammed zohaib, dubai, cut remotely</p>
     </article>
     <div class="year-head" data-year-head="2025">
-      <span class="year-head-year">2025</span><span class="year-head-rule"></span><span class="year-head-count mono muted" data-year-count="2025">2 FRAMES</span>
+      <span class="year-head-year">2025</span><span class="year-head-rule"></span><span class="year-head-count mono muted" data-year-count="2025">2 frames</span>
     </div>
     <article class="frame" data-frame="006" data-year="2025" data-roles="direction">
       <p class="frame-no"><span class="mono muted">Frame</span><span>006</span></p>
       <p class="frame-date mono">Dec 2025</p>
-      <p class="award mono"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4C4 7 4 17 8 20"/><path d="M16 4c4 3 4 13 0 16"/></svg>IFFK 2025 · Selected &amp; screened</p>
+      <p class="award mono"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4C4 7 4 17 8 20"/><path d="M16 4c4 3 4 13 0 16"/></svg>Selected and screened at IFFK 2025</p>
       <div class="badges"><span class="badge">Producer</span></div>
       <h2>Watuzi Zombie</h2>
       <p class="frame-note">a movie me and my friends produced, selected and screened at the International Kerala Film Festival in 2025.</p>
       <div class="media-pair media-pair--video media-pair--landscape">
-        <img src="images/149f7f62149c45138793bc778e334fbd.jpg" alt="Watuzi Zombie — IFFK poster" loading="lazy">
+        <img src="images/149f7f62149c45138793bc778e334fbd.jpg" alt="Watuzi Zombie IFFK poster" loading="lazy">
         <a class="media" href="https://www.youtube.com/watch?v=-HH4tRVGBKs" target="_blank" rel="noopener" aria-label="Watch Watuzi Zombie, the full movie, on YouTube">
           <img src="images/watusi-youtube-thumb.jpg" alt="Watuzi Zombie full movie, video thumbnail" loading="lazy">
-          <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">WATCH · FULL MOVIE</span>
+          <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">Watch the full movie</span>
         </a>
       </div>
       <p class="frame-with">with kitchen sink drama, kochi</p>
@@ -212,15 +212,15 @@
       <p class="frame-date mono">Feb 2025</p>
       <div class="badges"><span class="badge">Photography</span><span class="badge">Travel</span></div>
       <h2>Nepal</h2>
-      <p class="frame-note">photos from a trek through the Nepal Himalaya — snow peaks, glacial valleys, stupas and prayer flags.</p>
+      <p class="frame-note">photos from a trek through the Nepal Himalaya: snow peaks, glacial valleys, stupas and prayer flags.</p>
       <div class="media-pair media-pair--photos">
         <a href="https://www.flickr.com/photos/147185159@N08/albums/72177720331864872/" target="_blank" rel="noopener" aria-label="Open the album on Flickr"><img src="images/nepal-peak.jpg" alt="A trekker looking up at a snow-covered Himalayan peak, Nepal" loading="lazy"></a>
         <a href="https://www.flickr.com/photos/147185159@N08/albums/72177720331864872/" target="_blank" rel="noopener" aria-label="Open the album on Flickr"><img src="images/nepal-stupa.jpg" alt="A stupa and prayer flags in front of snow peaks, Nepal" loading="lazy"></a>
       </div>
-      <div class="ep-links"><a class="ep-link ep-link--main" href="https://www.flickr.com/photos/147185159@N08/albums/72177720331864872/" target="_blank" rel="noopener">Full album on Flickr · 69 photos ↗</a></div>
+      <div class="ep-links"><a class="ep-link ep-link--main" href="https://www.flickr.com/photos/147185159@N08/albums/72177720331864872/" target="_blank" rel="noopener">The full album on Flickr (69 photos)</a></div>
     </article>
     <div class="year-head" data-year-head="2024">
-      <span class="year-head-year">2024</span><span class="year-head-rule"></span><span class="year-head-count mono muted" data-year-count="2024">1 FRAME</span>
+      <span class="year-head-year">2024</span><span class="year-head-rule"></span><span class="year-head-count mono muted" data-year-count="2024">1 frame</span>
     </div>
     <article class="frame" data-frame="004" data-year="2024" data-roles="videography">
       <p class="frame-no"><span class="mono muted">Frame</span><span>004</span></p>
@@ -230,67 +230,67 @@
       <p class="frame-note">freelance videography and production work for the newly set up vox6 studios in Kochi.</p>
       <a class="media media--logo" href="https://www.vox6studios.com/" target="_blank" rel="noopener" aria-label="Visit vox6 studios">
         <img src="images/a6f556b2a5f74ba089da9ca9ab183f34.png" alt="vox6 studios logo" loading="lazy">
-        <span class="media-label">VOX6STUDIOS.COM</span>
+        <span class="media-label">vox6studios.com</span>
       </a>
       <p class="frame-with">for vox6 studios, kochi</p>
     </article>
     <div class="year-head" data-year-head="2023">
-      <span class="year-head-year">2023</span><span class="year-head-rule"></span><span class="year-head-count mono muted" data-year-count="2023">1 FRAME</span>
+      <span class="year-head-year">2023</span><span class="year-head-rule"></span><span class="year-head-count mono muted" data-year-count="2023">1 frame</span>
     </div>
     <article class="frame" data-frame="003" data-year="2023" data-roles="edit">
       <p class="frame-no"><span class="mono muted">Frame</span><span>003</span></p>
       <p class="frame-date mono">2023</p>
       <div class="badges"><span class="badge">Editor</span><span class="badge">Panelist</span></div>
-      <h2>first – born films podcast</h2>
-      <p class="frame-note">part of the podcast team on the first – born films YouTube channel, on the panel and in the edit.</p>
-      <a class="media" href="https://www.youtube.com/@FirstBornFilms/videos" target="_blank" rel="noopener" aria-label="Watch first – born films on YouTube">
+      <h2>First Born Films podcast</h2>
+      <p class="frame-note">part of the podcast team on the First Born Films YouTube channel, on the panel and in the edit.</p>
+      <a class="media" href="https://www.youtube.com/@FirstBornFilms/videos" target="_blank" rel="noopener" aria-label="Watch First Born Films on YouTube">
         <img src="images/d7929fa7d4514bbc887a25406f501eba.png" alt="First Born Films YouTube channel" loading="lazy">
-        <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">YOUTUBE · FIRST – BORN FILMS</span>
+        <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">First Born Films on YouTube</span>
       </a>
-      <p class="frame-with">with first – born films</p>
+      <p class="frame-with">with First Born Films</p>
       <div class="ep-links">
-        <a class="ep-link ep-link--main" href="https://www.youtube.com/playlist?list=PLB9QTv89QTwGXZjUUULHb4mPcCxln2IdF" target="_blank" rel="noopener">One more take · all episodes ↗</a>
-        <a class="ep-link" href="https://www.youtube.com/watch?v=mJ3gSNZFfvs" target="_blank" rel="noopener">EP 1 · Naseef Yusuf Izuddin (Irul) ↗</a>
-        <a class="ep-link" href="https://www.youtube.com/watch?v=aqkQMNfB47c" target="_blank" rel="noopener">EP 2 · Gaurav Marwaha ↗</a>
-        <a class="ep-link" href="https://www.youtube.com/watch?v=06he2BZR2AE" target="_blank" rel="noopener">Paava Kadhaigal ↗</a>
-        <a class="ep-link" href="https://www.youtube.com/@FirstBornFilms" target="_blank" rel="noopener">Channel · @FirstBornFilms ↗</a>
+        <a class="ep-link ep-link--main" href="https://www.youtube.com/playlist?list=PLB9QTv89QTwGXZjUUULHb4mPcCxln2IdF" target="_blank" rel="noopener">One More Take, all episodes</a>
+        <a class="ep-link" href="https://www.youtube.com/watch?v=mJ3gSNZFfvs" target="_blank" rel="noopener">Episode 1, Naseef Yusuf Izuddin (Irul)</a>
+        <a class="ep-link" href="https://www.youtube.com/watch?v=aqkQMNfB47c" target="_blank" rel="noopener">Episode 2, Gaurav Marwaha</a>
+        <a class="ep-link" href="https://www.youtube.com/watch?v=06he2BZR2AE" target="_blank" rel="noopener">Paava Kadhaigal</a>
+        <a class="ep-link" href="https://www.youtube.com/@FirstBornFilms" target="_blank" rel="noopener">@FirstBornFilms on YouTube</a>
       </div>
     </article>
     <div class="year-head" data-year-head="2022">
-      <span class="year-head-year">2022</span><span class="year-head-rule"></span><span class="year-head-count mono muted" data-year-count="2022">1 FRAME</span>
+      <span class="year-head-year">2022</span><span class="year-head-rule"></span><span class="year-head-count mono muted" data-year-count="2022">1 frame</span>
     </div>
     <article class="frame" data-frame="002" data-year="2022" data-roles="direction videography">
       <p class="frame-no"><span class="mono muted">Frame</span><span>002</span></p>
       <p class="frame-date mono">2022</p>
-      <p class="award mono"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4C4 7 4 17 8 20"/><path d="M16 4c4 3 4 13 0 16"/></svg>Best Short Film · Layatharang 2022</p>
-      <div class="badges"><span class="badge">Assoc. Director</span><span class="badge">Director of Photography</span></div>
+      <p class="award mono"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4C4 7 4 17 8 20"/><path d="M16 4c4 3 4 13 0 16"/></svg>Best Short Film, Layatharang 2022</p>
+      <div class="badges"><span class="badge">Assoc. director</span><span class="badge">Director of photography</span></div>
       <h2>Nidal &amp; the Unshakable Burden of Existence</h2>
       <p class="frame-note">a Malayalam short, subtitled, made with friends in my last year of college. three months of passion project.</p>
       <div class="media-pair media-pair--video media-pair--poster">
         <img src="images/f71c1f7cf7e4461d9214abd8bc76ade2.webp" alt="Nidal and the Unshakable Burden of Existence poster" loading="lazy">
         <a class="media" href="https://www.youtube.com/watch?v=TNhDzMygktc" target="_blank" rel="noopener" aria-label="Watch Nidal and the Unshakable Burden of Existence on YouTube (18:18)">
           <img src="images/nidal-youtube-thumb.jpg" alt="Nidal and the Unshakable Burden of Existence, video thumbnail" loading="lazy">
-          <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">WATCH · 18:18 · ENG SUBS</span>
+          <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">Watch the film (18:18, English subtitles)</span>
         </a>
       </div>
       <p class="frame-with">with friends, final year of college</p>
     </article>
     <div class="year-head" data-year-head="2021">
-      <span class="year-head-year">2021</span><span class="year-head-rule"></span><span class="year-head-count mono muted" data-year-count="2021">1 FRAME</span>
+      <span class="year-head-year">2021</span><span class="year-head-rule"></span><span class="year-head-count mono muted" data-year-count="2021">1 frame</span>
     </div>
     <article class="frame" data-frame="001" data-year="2021" data-roles="videography">
       <p class="frame-no"><span class="mono muted">Frame</span><span>001</span></p>
       <p class="frame-date mono">2021</p>
-      <p class="award mono"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4C4 7 4 17 8 20"/><path d="M16 4c4 3 4 13 0 16"/></svg>Best Short Film · Layatharang 2021</p>
+      <p class="award mono"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4C4 7 4 17 8 20"/><path d="M16 4c4 3 4 13 0 16"/></svg>Best Short Film, Layatharang 2021</p>
       <div class="badges"><span class="badge">Shot on phone</span><span class="badge">Performer</span></div>
       <h2>Sughamaano</h2>
       <p class="frame-note">a 10 minute Malayalam lockdown short for an online arts festival, inspired by a poem. shot at my old ancestral house in Kerala on my mobile phone, and performed by me because of the curfew.</p>
       <div class="media-pair media-pair--still">
         <a class="media" href="https://youtu.be/DNFC_QfXgl0" target="_blank" rel="noopener" aria-label="Watch Sughamaano on YouTube (13:23)">
-          <img src="images/74b3bd6f74cb4a8c8609e99c4a0d7e01.jpg" alt="Sughamaano — title card over a blue sky" loading="lazy">
-          <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">WATCH · 13:23</span>
+          <img src="images/74b3bd6f74cb4a8c8609e99c4a0d7e01.jpg" alt="Sughamaano title card over a blue sky" loading="lazy">
+          <span class="media-play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span><span class="media-label">Watch the film (13:23)</span>
         </a>
-        <img src="images/f2c636ed5fb04321afecc0a3260297b0.png" alt="Sughamaano — film still" loading="lazy">
+        <img src="images/f2c636ed5fb04321afecc0a3260297b0.png" alt="Sughamaano film still" loading="lazy">
       </div>
       <p class="frame-with">lockdown, kerala</p>
     </article>
@@ -298,23 +298,23 @@
 
   <!-- Credits list: shown instead of the feed when media is collapsed -->
   <ol class="wl-credits">
-    <li class="credit" data-frame-ref="012"><span class="credit-no">012</span><span><span class="credit-title">Allrounders</span><span class="credit-roles mono muted">Freelance videographer</span></span><span class="credit-date">SEPT 2026</span></li>
-    <li class="credit" data-frame-ref="011"><span class="credit-no">011</span><span><span class="credit-title">Studio Urli</span><span class="credit-roles mono muted">Freelance videographer</span></span><span class="credit-date">MAR – SEPT 2026</span></li>
-    <li class="credit" data-frame-ref="010"><span class="credit-no">010</span><span><span class="credit-title">Itanagar from above</span><span class="credit-roles mono muted">Drone videography · Travel agency</span></span><span class="credit-date">JUNE 2026</span></li>
-    <li class="credit" data-frame-ref="009"><span class="credit-no">009</span><span><span class="credit-title"><a href="https://flic.kr/s/aHBqjD36aP" target="_blank" rel="noopener">Meghalaya</a></span><span class="credit-roles mono muted">Photography · Travel</span></span><span class="credit-date">MAY 2026</span></li>
-    <li class="credit" data-frame-ref="008"><span class="credit-no">008</span><span><span class="credit-title">Genius Fitness Arena</span><span class="credit-roles mono muted">Videography · Edit</span></span><span class="credit-date">MAY 2026</span></li>
-    <li class="credit" data-frame-ref="007"><span class="credit-no">007</span><span><span class="credit-title">Mohammed Zohaib</span><span class="credit-roles mono muted">Video editor</span></span><span class="credit-date">FEB 2026</span></li>
-    <li class="credit" data-frame-ref="006"><span class="credit-no">006</span><span><span class="credit-title">Watuzi Zombie</span><span class="credit-roles mono muted">Producer · IFFK 2025</span></span><span class="credit-date">DEC 2025</span></li>
-    <li class="credit" data-frame-ref="005"><span class="credit-no">005</span><span><span class="credit-title"><a href="https://www.flickr.com/photos/147185159@N08/albums/72177720331864872/" target="_blank" rel="noopener">Nepal</a></span><span class="credit-roles mono muted">Photography · Travel</span></span><span class="credit-date">FEB 2025</span></li>
-    <li class="credit" data-frame-ref="004"><span class="credit-no">004</span><span><span class="credit-title">vox6 studios</span><span class="credit-roles mono muted">Videography · Production</span></span><span class="credit-date">2024</span></li>
-    <li class="credit" data-frame-ref="003"><span class="credit-no">003</span><span><span class="credit-title">first – born films podcast</span><span class="credit-roles mono muted">Editor · Panelist</span></span><span class="credit-date">2023</span></li>
-    <li class="credit" data-frame-ref="002"><span class="credit-no">002</span><span><span class="credit-title">Nidal &amp; the Unshakable Burden of Existence</span><span class="credit-roles mono muted">Assoc. Director · DoP · Best Short Film</span></span><span class="credit-date">2022</span></li>
-    <li class="credit" data-frame-ref="001"><span class="credit-no">001</span><span><span class="credit-title">Sughamaano</span><span class="credit-roles mono muted">Shot · Performed · Best Short Film</span></span><span class="credit-date">2021</span></li>
+    <li class="credit" data-frame-ref="012"><span class="credit-no">012</span><span><span class="credit-title">Allrounders</span><span class="credit-roles mono muted">Freelance videographer</span></span><span class="credit-date">Sept 2026</span></li>
+    <li class="credit" data-frame-ref="011"><span class="credit-no">011</span><span><span class="credit-title">Studio Urli</span><span class="credit-roles mono muted">Freelance videographer</span></span><span class="credit-date">Mar to Sept 2026</span></li>
+    <li class="credit" data-frame-ref="010"><span class="credit-no">010</span><span><span class="credit-title">Itanagar from above</span><span class="credit-roles mono muted">Drone videography for a travel agency</span></span><span class="credit-date">June 2026</span></li>
+    <li class="credit" data-frame-ref="009"><span class="credit-no">009</span><span><span class="credit-title"><a href="https://flic.kr/s/aHBqjD36aP" target="_blank" rel="noopener">Meghalaya</a></span><span class="credit-roles mono muted">Travel photography</span></span><span class="credit-date">May 2026</span></li>
+    <li class="credit" data-frame-ref="008"><span class="credit-no">008</span><span><span class="credit-title">Genius Fitness Arena</span><span class="credit-roles mono muted">Videography and edit</span></span><span class="credit-date">May 2026</span></li>
+    <li class="credit" data-frame-ref="007"><span class="credit-no">007</span><span><span class="credit-title">Mohammed Zohaib</span><span class="credit-roles mono muted">Video editor</span></span><span class="credit-date">Feb 2026</span></li>
+    <li class="credit" data-frame-ref="006"><span class="credit-no">006</span><span><span class="credit-title">Watuzi Zombie</span><span class="credit-roles mono muted">Producer, IFFK 2025</span></span><span class="credit-date">Dec 2025</span></li>
+    <li class="credit" data-frame-ref="005"><span class="credit-no">005</span><span><span class="credit-title"><a href="https://www.flickr.com/photos/147185159@N08/albums/72177720331864872/" target="_blank" rel="noopener">Nepal</a></span><span class="credit-roles mono muted">Travel photography</span></span><span class="credit-date">Feb 2025</span></li>
+    <li class="credit" data-frame-ref="004"><span class="credit-no">004</span><span><span class="credit-title">vox6 studios</span><span class="credit-roles mono muted">Videography and production</span></span><span class="credit-date">2024</span></li>
+    <li class="credit" data-frame-ref="003"><span class="credit-no">003</span><span><span class="credit-title">First Born Films podcast</span><span class="credit-roles mono muted">Editor and panelist</span></span><span class="credit-date">2023</span></li>
+    <li class="credit" data-frame-ref="002"><span class="credit-no">002</span><span><span class="credit-title">Nidal &amp; the Unshakable Burden of Existence</span><span class="credit-roles mono muted">Associate director and DoP; Best Short Film</span></span><span class="credit-date">2022</span></li>
+    <li class="credit" data-frame-ref="001"><span class="credit-no">001</span><span><span class="credit-title">Sughamaano</span><span class="credit-roles mono muted">Shot and performed; Best Short Film</span></span><span class="credit-date">2021</span></li>
   </ol>
 
   <footer class="wl-footer mono">
-    <a href="index.html">← ROHITRAVIKUMAR.COM</a>
-    <a href="#top">BACK TO TOP ↑</a>
+    <a href="index.html">Back to rohitravikumar.com</a>
+    <a href="#top">Back to top</a>
   </footer>
 </main>
 

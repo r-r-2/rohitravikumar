@@ -46,7 +46,7 @@
     });
   });
 
-  root.classList.add('motion');
+  root.classList.add('js');
 
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {

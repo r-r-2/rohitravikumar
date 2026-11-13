@@ -52,7 +52,7 @@
       var n = perYear[y] || 0;
       h.hidden = n === 0;
       var c = h.querySelector('[data-year-count]');
-      if (c) c.textContent = plural(n).toUpperCase();
+      if (c) c.textContent = plural(n);
     });
 
     Array.prototype.forEach.call(credits, function (li) {
@@ -81,7 +81,7 @@
     emptyEl.hidden = shown !== 0;
     main.classList.toggle('is-collapsed', state.collapsed);
     collapseBtn.setAttribute('aria-pressed', state.collapsed ? 'true' : 'false');
-    collapseLabel.textContent = state.collapsed ? 'SHOW MEDIA' : 'COLLAPSE MEDIA';
+    collapseLabel.textContent = state.collapsed ? 'Show media' : 'Collapse media';
   }
 
   Array.prototype.forEach.call(cols, function (col) {
