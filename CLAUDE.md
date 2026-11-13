@@ -10,7 +10,15 @@ styles.css    — all styles; uses CSS custom properties (variables) at the top
 README.md     — human-readable deploy/edit guide for the site owner
 CLAUDE.md     — this file
 images/       — all site images, served locally
+worklog.html  — the worklog: a numbered feed of projects with year/role filters
+worklog-nidal.html — a full story page for one worklog frame (copy it for more)
+worklog.css   — styles for the worklog pages (same colours and fonts as styles.css)
+worklog.js    — worklog filters and "collapse media"; plain JS, no build step
 ```
+
+The home page has a floating **Worklog** button (bottom of `index.html`, styles under
+FLOATING WORKLOG BUTTON in `styles.css`). It stays hidden until the header scrolls
+out of view; a small inline script at the end of `index.html` does that.
 
 ## Key design decisions
 

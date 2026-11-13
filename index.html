@@ -9,7 +9,7 @@
   <!-- Fonts: Azeret Mono (title), DM Sans (headings), Questrial (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400&family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;0,9..40,900;1,9..40,400&family=Questrial&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,87 +18,37 @@
 <!-- ═══════════════════════════════════════════
      HEADER
      To edit: change the name text below.
-     The icon is an inline SVG camera shape.
+     The icon is an inline SVG camera aperture.
 ═══════════════════════════════════════════ -->
 <header class="site-header">
   <a href="#" class="site-title-link">
     <span class="site-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M9 3L7.17 5H4C2.9 5 2 5.9 2 7v13c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2h-3.17L15 3H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3z"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="9.5"/><path d="M14.31 8l5.74 9.94"/><path d="M9.69 8h11.48"/><path d="M7.38 12l5.74-9.94"/><path d="M9.69 16L3.95 6.06"/><path d="M14.31 16H2.83"/><path d="M16.62 12l-5.74 9.94"/>
       </svg>
     </span>
     <span class="site-title-text">Rohit&nbsp; Ravikumar</span>
   </a>
-
-  <nav class="site-nav">
-    <a href="#projects">Click here to jump to the Projects !</a>
-  </nav>
 </header>
 
 
 <!-- ═══════════════════════════════════════════
      ABOUT ME
-     To edit: update the paragraph text below.
+     To edit: update the lead line and the two cards.
 ═══════════════════════════════════════════ -->
 <section class="section--cream" id="about">
   <div class="container">
     <h2 class="section-heading">About&nbsp; Me</h2>
-    <div class="about-text">
-      <p>An avid film-maker at heart and an iOS app developer in the market, i dabble in all things new and interesting.</p>
-      <p>The engineer in me makes me a tech geek and the filmmaker inside looks for exciting stories to be told, written and showcased.</p>
-      <p>I also fawn over movies and shows in every way possible and a slow weekend, you'll find me either relaxing by the pool or in a theater, lost in another world.</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════
-     BACKGROUND / TIMELINE
-     To edit: update dates, titles, orgs and
-     description text in each .timeline-item.
-═══════════════════════════════════════════ -->
-<section class="section--red" id="background">
-  <div class="container">
-    <h2 class="section-heading section-heading--white">Background</h2>
-
-    <div class="timeline">
-
-      <!-- Timeline entry 1 -->
-      <div class="timeline-item">
-        <div class="timeline-left">
-          <p class="timeline-date">2006–2017</p>
-          <p class="timeline-title">Secondary School Education</p>
-          <p class="timeline-org">Kendriya Vidyalaya ONGC Surat</p>
-        </div>
-        <div class="timeline-right">
-          <p>I spent most of my childhood in Surat, the diamond city of Gujarat—famed for its thriving textile industry and the legendary street food stalls and it's earnest cricket fanatics.</p>
-        </div>
+    <p class="about-lead">An avid <em>film-maker</em> at heart and an <em>iOS app developer</em> in the market, i dabble in all things new and interesting.</p>
+    <div class="about-cards">
+      <div class="about-card">
+        <span class="skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5"/><path d="M16 7l5 5-5 5"/><path d="M10.5 9.5v5l4-2.5z"/></svg></span>
+        <p>The engineer in me makes me a tech geek and the filmmaker inside looks for exciting stories to be told, written and showcased.</p>
       </div>
-
-      <!-- Timeline entry 2 -->
-      <div class="timeline-item">
-        <div class="timeline-left">
-          <p class="timeline-date">2018–2022</p>
-          <p class="timeline-title">BTech in Computer Science</p>
-          <p class="timeline-org">APJ Abdul Kalam Technogical University (KTU)</p>
-        </div>
-        <div class="timeline-right">
-          <p>I graduated as a CS Engineer in Kochi, an emerging metropolitan tech hub set in a state that lives and breathes cinema, and celebrates food with its life-reaffirming cuisines.</p>
-        </div>
+      <div class="about-card">
+        <span class="skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2.5a2.5 2.5 0 0 0 0 5V17a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2.5a2.5 2.5 0 0 0 0-5z"/><path d="M14 5v2"/><path d="M14 11v2"/><path d="M14 17v2"/></svg></span>
+        <p>I also fawn over movies and shows in every way possible and a slow weekend, you'll find me either relaxing by the pool or in a theater, lost in another world.</p>
       </div>
-
-      <!-- Timeline entry 3 -->
-      <div class="timeline-item">
-        <div class="timeline-left">
-          <p class="timeline-date">2022–2025 ( Present )</p>
-          <p class="timeline-title">iOS Front End App Engineer</p>
-          <p class="timeline-org">Target Retail</p>
-        </div>
-        <div class="timeline-right">
-          <p>My first hands-on full-time role was with the iOS App Team for Target's U.S. retail app set up in <em>B'lore</em>, where I worked to make the shopping experience easier and more enjoyable for our guests</p>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -107,35 +57,88 @@
 <!-- ═══════════════════════════════════════════
      HERO PHOTOS
      To edit: replace src="..." with your own
-     image paths. Left image is landscape (wide),
-     right is portrait/selfie.
+     images. Left = wide, Right = portrait.
 ═══════════════════════════════════════════ -->
 <section class="hero-photos">
   <div class="hero-photos-grid">
-    <img
-      class="hero-photo--wide"
-      src="images/fe54a2daba9c4405b52fd4124c3318ec.jpg"
-      alt="Waterfront at dusk"
-      loading="lazy"
-    >
-    <img
-      class="hero-photo--portrait"
-      src="images/2f50def3fa064a92a976de026f94a7ba.jpg"
-      alt="Rohit with camera on a plane"
-      loading="lazy"
-    >
+    <img class="hero-photo--wide" src="images/fe54a2daba9c4405b52fd4124c3318ec.jpg" alt="Waterfront at dusk" loading="lazy">
+    <img class="hero-photo--portrait" src="images/2f50def3fa064a92a976de026f94a7ba.jpg" alt="Rohit with camera on a plane" loading="lazy">
   </div>
 </section>
 
 
 <!-- ═══════════════════════════════════════════
-     SHOWCASE INTRO + PHOTO GALLERY
-     To edit: update description text and
-     replace gallery image src attributes.
+     BACKGROUND / TIMELINE
+     To edit: update each .timeline-item block.
+     The last item gets the glowing dot.
+═══════════════════════════════════════════ -->
+<section class="section--red" id="background">
+  <div class="container">
+    <h2 class="section-heading section-heading--white">Background</h2>
+    <p class="timeline-route" aria-label="Surat, then Kochi, then Bengaluru"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.33-6-11a6 6 0 0 1 12 0c0 5.67-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg>Surat</span><i aria-hidden="true"></i><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.33-6-11a6 6 0 0 1 12 0c0 5.67-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg>Kochi</span><i aria-hidden="true"></i><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.33-6-11a6 6 0 0 1 12 0c0 5.67-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg>Bengaluru</span></p>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <p class="timeline-date">2006–2017</p>
+          <p class="timeline-title">Secondary School Education</p>
+          <p class="timeline-org">Kendriya Vidyalaya ONGC Surat</p>
+          <p class="timeline-place"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.33-6-11a6 6 0 0 1 12 0c0 5.67-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg>Surat, Gujarat</p>
+        </div>
+        <div class="timeline-right">
+          <p>I spent most of my childhood in Surat, the diamond city of Gujarat—famed for its thriving textile industry and the legendary street food stalls and it's earnest cricket fanatics.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <p class="timeline-date">2018–2022</p>
+          <p class="timeline-title">BTech in Computer Science</p>
+          <p class="timeline-org">APJ Abdul Kalam Technogical University (KTU)</p>
+          <p class="timeline-place"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.33-6-11a6 6 0 0 1 12 0c0 5.67-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg>Kochi, Kerala</p>
+        </div>
+        <div class="timeline-right">
+          <p>I graduated as a CS Engineer in Kochi, an emerging metropolitan tech hub set in a state that lives and breathes cinema, and celebrates food with its life-reaffirming cuisines.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <p class="timeline-date">2022–2025</p>
+          <p class="timeline-title">iOS Front End App Engineer</p>
+          <p class="timeline-org">Target Retail</p>
+          <p class="timeline-place"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.33-6-11a6 6 0 0 1 12 0c0 5.67-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg>Bengaluru, Karnataka</p>
+        </div>
+        <div class="timeline-right">
+          <p>My first hands-on full-time role was with the iOS App Team for Target's U.S. retail app set up in <em>B'lore</em>, where I worked to make the shopping experience easier and more enjoyable for our guests</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <p class="timeline-date">2026 <span class="timeline-now">Present</span></p>
+          <p class="timeline-title">Freelance Journey</p>
+          <p class="timeline-org">Filmmaker &amp; Editor · Independent</p>
+        </div>
+        <div class="timeline-right">
+          <p>Stepping out on my own to shoot, cut and direct full-time, taking on client work alongside the stories I want to tell.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SHOWCASE
+     To edit: update the intro paragraphs and
+     swap collage images in .photo-collage.
 ═══════════════════════════════════════════ -->
 <section class="section--cream" id="showcase">
   <div class="container">
-    <h2 class="section-heading">Showcase through the years.</h2>
+    <h2 class="section-heading">Through my lens.</h2>
 
     <div class="showcase-intro">
       <p>I've had a keen, observant eye as a photographer since my early years—a passion that naturally evolved into all things filmmaking, from shooting and editing to writing. During my graduation, I actively collaborated across creative outlets, from leading in the photography club to coordinating events, and contributed to two short films that went on to win the college arts competition. I also occasionally write about movies and pop culture, diving deep into the stories, details, and craft behind the cinema I adore.</p>
@@ -143,51 +146,58 @@
     </div>
   </div>
 
-  <!-- Full-bleed photo collage — no container wrapper intentional -->
   <div class="photo-collage">
-    <img class="collage-img--1"
-      src="images/66da37c07e004c50b935f6f76b668513.jpg"
-      alt="Concert photography — saxophonist under stage lights"
-      loading="lazy"
-    >
-    <img class="collage-img--2"
-      src="images/b7c112c7889e4e52a69ee16554325913.jpg"
-      alt="Portrait photography"
-      loading="lazy"
-    >
-    <img class="collage-img--3"
-      src="images/0fef56a819784b74803ca94301757ac2.jpg"
-      alt="Nature photography — dragonfly macro"
-      loading="lazy"
-    >
-    <img class="collage-img--4"
-      src="images/c2524a3473174f8cb57a6ce0c07d3a37.jpg"
-      alt="Band performance — group on stage"
-      loading="lazy"
-    >
+    <img class="collage-img--1" src="images/66da37c07e004c50b935f6f76b668513.jpg" alt="Concert photography — saxophonist under stage lights" loading="lazy">
+    <img class="collage-img--2" src="images/b7c112c7889e4e52a69ee16554325913.jpg" alt="Portrait photography" loading="lazy">
+    <img class="collage-img--3" src="images/0fef56a819784b74803ca94301757ac2.jpg" alt="Nature photography — dragonfly macro" loading="lazy">
+    <img class="collage-img--4" src="images/c2524a3473174f8cb57a6ce0c07d3a37.jpg" alt="Band performance — group on stage" loading="lazy">
   </div>
 </section>
 
 
 <!-- ═══════════════════════════════════════════
      PHOTOGRAPHY
-     To edit: update the bullet-style paragraphs
-     and the Flickr link href.
+     To edit: update the paragraphs and the gear
+     cards. Keep the photo credit line accurate.
 ═══════════════════════════════════════════ -->
 <section class="section--cream" id="photography">
   <div class="container">
-    <h2 class="section-heading">Photography</h2>
+    <h2 class="section-heading">Photography &amp; Videography</h2>
 
     <div class="photography-text">
       <p>Clicking photos is second nature and a primary hobby.</p>
-      <p>I currently own and proudly flex, a Sony a7c, which is a companion to me on every trip.</p>
+      <p>I currently own and proudly flex, a Sony a7C, which is a companion to me on every trip.</p>
       <p>I try occasionally new tech and accessories by renting out lights and lenses.</p>
-      <p>Besides digital, i also enjoy capturing in film using half-century old analog cameras.</p>
+      <p>Besides digital, i also enjoy capturing in film using half-century old analog cameras, a Yashica Electro 35 and a Yashica MF-2.</p>
+      <p>I also play around with two other fun gadgets: a DJI Mini 4 Pro for the view from above, and a DJI Osmo Action 5 Pro for the rough-and-tumble shots.</p>
       <p>Experienced in covering concerts, taking stills on set and a lil bit of product photography too.</p>
+
+      <div class="gear-grid">
+        <div class="gear-card">
+          <div class="gear-photo"><img src="images/gear-sony-a7c.jpg" alt="Sony a7C mirrorless camera with a 28-60mm lens" loading="lazy"></div>
+          <div class="gear-info"><p class="gear-kind">Digital · Mirrorless</p><p class="gear-name">Sony a7C</p></div>
+        </div>
+        <div class="gear-card">
+          <div class="gear-photo"><img src="images/gear-yashica-electro-35.jpg" alt="Yashica Electro 35 rangefinder film camera" loading="lazy"></div>
+          <div class="gear-info"><p class="gear-kind">Film · Rangefinder</p><p class="gear-name">Yashica Electro 35</p></div>
+        </div>
+        <div class="gear-card">
+          <div class="gear-photo"><img src="images/gear-yashica-mf-2.jpg" alt="Yashica MF-2 compact film camera" loading="lazy"></div>
+          <div class="gear-info"><p class="gear-kind">Film · Automatic</p><p class="gear-name">Yashica MF-2</p></div>
+        </div>
+        <div class="gear-card">
+          <div class="gear-photo"><img src="images/gear-dji-mini-4-pro.jpg" alt="DJI Mini 4 Pro drone, unfolded" loading="lazy"></div>
+          <div class="gear-info"><p class="gear-kind">Drone · Aerials</p><p class="gear-name">DJI Mini 4 Pro</p></div>
+        </div>
+        <div class="gear-card">
+          <div class="gear-photo"><img src="images/gear-dji-osmo-action-5-pro.jpg" alt="DJI Osmo Action 5 Pro action camera" loading="lazy"></div>
+          <div class="gear-info"><p class="gear-kind">Action · 4K</p><p class="gear-name">DJI Osmo Action 5 Pro</p></div>
+        </div>
+      </div>
+      <p class="gear-credit">Photos via Wikimedia Commons: Sony a7C by Henry Söderlund (CC BY 2.0) · Yashica Electro 35 by Scott Akerman (CC BY 2.0) · Yashica MF-2 by Sgroey (CC BY-SA 4.0) · DJI Mini 4 Pro by Jacek Halicki (CC BY-SA 4.0) · DJI Osmo Action 5 Pro by Habib M'henni (CC BY-SA 4.0). Cropped.</p>
+
       <p>
-        <a href="https://www.flickr.com/photos/147185159@N08/" target="_blank" rel="noopener">
-          Check – out more photos here
-        </a>
+        <a href="https://www.flickr.com/photos/147185159@N08/" target="_blank" rel="noopener">Check – out more photos here</a>
       </p>
     </div>
   </div>
@@ -195,81 +205,101 @@
 
 
 <!-- ═══════════════════════════════════════════
-     FILM-MAKING: COLLABORATIVE WORK
-     id="projects" is the jump target from nav.
-     To edit: update text and channel card images.
+     FILM-MAKING — COLLABORATIVE WORK
+     To edit: update the cards, then the channel
+     images below them.
 ═══════════════════════════════════════════ -->
 <section class="section--tan-lt" id="projects">
   <div class="container">
     <h2 class="section-heading section-heading--red">Film-making</h2>
     <p class="section-sub">Collaborative work</p>
 
-    <div class="collab-text">
-      <p>
-        I was part of the podcast team in
-        <a href="https://www.youtube.com/@FirstBornFilms/videos" target="_blank" rel="noopener">first&nbsp;–&nbsp;born films</a>
-        YouTube channel, as a panelist and editor.
-      </p>
-      <p>
-        I was a part of creative collective based in Kochi named
-        <a href="https://www.youtube.com/@kitchensinkdrama.7498/videos" target="_blank" rel="noopener">kitchen sink drama</a>.
-        I was involved in everything from ideation to post-production with my friends back home.
-      </p>
-      <p>
-        Me and my friends produced a movie titled
-        "<a href="https://www.youtube.com/@kitchensinkdrama.7498/videos" target="_blank" rel="noopener">Watuzi Zombie</a>"
-        which was selected and screened in the International Kerala Film Festival in 2025.
-      </p>
-      <p>
-        I have done freelance videography and production work for the recently set up
-        <a href="https://www.vox6studios.com/" target="_blank" rel="noopener">vox6</a>
-        studios in Kochi.
-      </p>
-      <p>
-        I worked as a secondary reel and video editor for
-        <a href="https://www.youtube.com/@MohammedZohaib86" target="_blank" rel="noopener">Mohammed Zohaib</a>,
-        a real estate investing advising channel based in Dubai.
-      </p>
+    <div class="collab-grid">
+      <div class="collab-card collab-card--featured">
+        <svg class="collab-laurel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true"><path d="M16 8C8 14 7 30 16 40"/><path d="M32 8c8 6 9 22 0 32"/><path d="M12 16c-3 0-5-2-5-4 3 0 5 2 5 4z"/><path d="M10 24c-3 0-5-2-5-4 3 0 5 2 5 4z"/><path d="M11 32c-3 0-5-2-5-4 3 0 5 2 5 4z"/><path d="M36 16c3 0 5-2 5-4-3 0-5 2-5 4z"/><path d="M38 24c3 0 5-2 5-4-3 0-5 2-5 4z"/><path d="M37 32c3 0 5-2 5-4-3 0-5 2-5 4z"/></svg>
+        <div>
+          <p class="collab-role">Producer · IFFK 2025 — Selected &amp; screened</p>
+          <p class="collab-title"><a href="https://www.youtube.com/@kitchensinkdrama.7498/videos" target="_blank" rel="noopener">Watuzi Zombie</a></p>
+          <p class="collab-desc">Me and my friends produced this movie, which was selected and screened in the International Kerala Film Festival in 2025.</p>
+          <a class="collab-link" href="https://www.youtube.com/@kitchensinkdrama.7498/videos" target="_blank" rel="noopener">YouTube · @kitchensinkdrama ↗</a>
+        </div>
+      </div>
+      <div class="collab-card">
+        <p class="collab-role">Panelist &amp; editor</p>
+        <p class="collab-title"><a href="https://www.youtube.com/@FirstBornFilms/videos" target="_blank" rel="noopener">first&nbsp;–&nbsp;born films</a></p>
+        <p class="collab-desc">Part of the podcast team on their YouTube channel.</p>
+        <a class="collab-link" href="https://www.youtube.com/@FirstBornFilms" target="_blank" rel="noopener">YouTube · @FirstBornFilms ↗</a>
+      </div>
+      <div class="collab-card">
+        <p class="collab-role">Creative collective</p>
+        <p class="collab-title"><a href="https://www.youtube.com/@kitchensinkdrama.7498/videos" target="_blank" rel="noopener">kitchen sink drama</a> <span>· Kochi</span></p>
+        <p class="collab-desc">Involved in everything from ideation to post-production with my friends back home.</p>
+        <a class="collab-link" href="https://www.youtube.com/@kitchensinkdrama.7498/videos" target="_blank" rel="noopener">YouTube · @kitchensinkdrama ↗</a>
+      </div>
+      <div class="collab-card collab-card--logo">
+        <a class="collab-logo collab-logo--dark" href="https://www.vox6studios.com/" target="_blank" rel="noopener" aria-label="vox6 studios website"><img src="images/a6f556b2a5f74ba089da9ca9ab183f34.png" alt="vox6 studios logo" loading="lazy"></a>
+        <div>
+          <p class="collab-role">Freelance videography &amp; production</p>
+          <p class="collab-title"><a href="https://www.vox6studios.com/" target="_blank" rel="noopener">vox6 studios</a> <span>· Kochi</span></p>
+          <p class="collab-desc">Videography and production work for the recently set up studio.</p>
+          <a class="collab-link" href="https://www.vox6studios.com/" target="_blank" rel="noopener">Website · vox6studios.com ↗</a>
+        </div>
+      </div>
+      <div class="collab-card collab-card--logo">
+        <a class="collab-logo collab-logo--mono" href="https://www.youtube.com/@MohammedZohaib86" target="_blank" rel="noopener" aria-label="Mohammed Zohaib on YouTube"><span aria-hidden="true">MZ</span></a>
+        <div>
+          <p class="collab-role">Video editor</p>
+          <p class="collab-title"><a href="https://www.youtube.com/@MohammedZohaib86" target="_blank" rel="noopener">Mohammed Zohaib</a> <span>· Dubai</span></p>
+          <p class="collab-desc">A real estate investing advising channel.</p>
+          <a class="collab-link" href="https://www.youtube.com/@MohammedZohaib86" target="_blank" rel="noopener">YouTube · @MohammedZohaib86 ↗</a>
+        </div>
+      </div>
+      <div class="collab-card collab-card--logo">
+        <a class="collab-logo" href="https://www.instagram.com/studio_urli/" target="_blank" rel="noopener" aria-label="Studio Urli on Instagram"><img src="images/studio-urli-logo.jpg" alt="Studio Urli logo" loading="lazy"></a>
+        <div>
+          <p class="collab-role">Freelance videographer</p>
+          <p class="collab-title"><a href="https://www.instagram.com/studio_urli/" target="_blank" rel="noopener">Studio Urli</a></p>
+          <p class="collab-desc">A creative studio for conscious, sustainable and impact-led brands. I shoot video for their projects.</p>
+          <a class="collab-link" href="https://www.instagram.com/studio_urli/" target="_blank" rel="noopener">Instagram · @studio_urli ↗</a>
+        </div>
+      </div>
+      <div class="collab-card collab-card--logo">
+        <a class="collab-logo" href="https://www.youtube.com/@theallrounderrs" target="_blank" rel="noopener" aria-label="Allrounders on YouTube"><img src="images/allrounders-logo.jpg" alt="Allrounders channel logo" loading="lazy"></a>
+        <div>
+          <p class="collab-role">Freelance videographer</p>
+          <p class="collab-title"><a href="https://www.youtube.com/@theallrounderrs" target="_blank" rel="noopener">Allrounders</a> <span>· 122K subscribers</span></p>
+          <p class="collab-desc">A Kannada YouTube channel mixing podcasts, travel vlogs and fun challenges. I shoot for them freelance.</p>
+          <a class="collab-link" href="https://www.youtube.com/@theallrounderrs" target="_blank" rel="noopener">YouTube · @theallrounderrs ↗</a>
+        </div>
+      </div>
+      <div class="collab-card collab-card--logo">
+        <span class="collab-logo collab-logo--dark"><img src="images/genius-fitness-arena-logo.png" alt="Genius Fitness Arena logo" loading="lazy" style="padding: 6%"></span>
+        <div>
+          <p class="collab-role">Freelance videographer</p>
+          <p class="collab-title">Genius Fitness Arena <span>· Arunachal Pradesh</span></p>
+          <p class="collab-desc">A gym in Arunachal Pradesh. In May 2026 I shot and edited content for them, including a trainer showreel for Rishiraj Baruah.</p>
+        </div>
+      </div>
     </div>
 
-    <!-- Channel / work screenshots — replace src with local images to remove Wix dependency -->
-    <div class="channels-grid">
-      <div class="channel-card">
-        <a href="https://www.youtube.com/@FirstBornFilms/videos" target="_blank" rel="noopener">
-          <img
-            src="images/d7929fa7d4514bbc887a25406f501eba.png"
-            alt="First Born Films — YouTube Channel"
-            loading="lazy"
-          >
-        </a>
-      </div>
-      <div class="channel-card">
-        <a href="https://www.youtube.com/@kitchensinkdrama.7498/videos" target="_blank" rel="noopener">
-          <img
-            src="images/6e80e95abc16464a927bfded99a59371.png"
-            alt="Kitchen Sink Drama — YouTube Channel"
-            loading="lazy"
-          >
-        </a>
-      </div>
-      <div class="channel-card">
-        <a href="https://www.vox6studios.com/" target="_blank" rel="noopener">
-          <img
-            src="images/149f7f62149c45138793bc778e334fbd.jpg"
-            alt="Vox6 Studios — freelance work"
-            loading="lazy"
-          >
-        </a>
-      </div>
-      <div class="channel-card">
-        <a href="https://www.youtube.com/@MohammedZohaib86" target="_blank" rel="noopener">
-          <img
-            src="images/a6f556b2a5f74ba089da9ca9ab183f34.png"
-            alt="Mohammed Zohaib — YouTube Channel"
-            loading="lazy"
-          >
-        </a>
-      </div>
+    <!-- Feature row: Watuzi Zombie poster and the vox6 logo -->
+    <div class="channels-feature">
+      <a class="channel-card" href="https://www.youtube.com/@kitchensinkdrama.7498/videos" target="_blank" rel="noopener">
+        <img src="images/149f7f62149c45138793bc778e334fbd.jpg" alt="Watuzi Zombie — IFFK poster" loading="lazy">
+      </a>
+      <a class="channel-card channel-card--logo" href="https://www.vox6studios.com/" target="_blank" rel="noopener">
+        <img src="images/a6f556b2a5f74ba089da9ca9ab183f34.png" alt="vox6 studios logo" loading="lazy">
+      </a>
+    </div>
+
+    <!-- Banner row: channel banners, sitting on the next section -->
+    <div class="channels-banners">
+      <a class="channel-card" href="https://www.youtube.com/@FirstBornFilms/videos" target="_blank" rel="noopener">
+        <img src="images/d7929fa7d4514bbc887a25406f501eba.png" alt="First Born Films — YouTube Channel" loading="lazy">
+      </a>
+      <a class="channel-card" href="https://www.youtube.com/@kitchensinkdrama.7498/videos" target="_blank" rel="noopener">
+        <img src="images/6e80e95abc16464a927bfded99a59371.png" alt="Kitchen Sink Drama — YouTube Channel" loading="lazy">
+      </a>
     </div>
 
   </div>
@@ -277,55 +307,51 @@
 
 
 <!-- ═══════════════════════════════════════════
-     FILM-MAKING: PERSONAL PROJECTS
-     To edit: update project text and images.
-     Each .project-block is one film project.
+     FILM-MAKING — PASSION PROJECTS
+     Dark "screening room". Each .project-block
+     has text plus images; video cards open the
+     film on YouTube.
 ═══════════════════════════════════════════ -->
-<section class="section--tan-md">
+<section class="section--tan-md section--screening" id="personal-projects">
   <div class="container">
-    <h2 class="section-heading section-heading--red">Film-making</h2>
-    <p class="section-sub">Personal Projects</p>
+    <h2 class="section-heading">Film-making</h2>
+    <p class="section-sub">Passion Projects</p>
 
-    <!-- Project 1: Sughamaano -->
+    <!-- Project: Sughamaano -->
     <div class="project-block">
       <div class="project-text">
-        <span class="project-badge">Best Short Film 2021 · Layatharang</span>
+        <p class="project-award"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M16 8C8 14 7 30 16 40"/><path d="M32 8c8 6 9 22 0 32"/><path d="M12 16c-3 0-5-2-5-4 3 0 5 2 5 4z"/><path d="M10 24c-3 0-5-2-5-4 3 0 5 2 5 4z"/><path d="M11 32c-3 0-5-2-5-4 3 0 5 2 5 4z"/><path d="M36 16c3 0 5-2 5-4-3 0-5 2-5 4z"/><path d="M38 24c3 0 5-2 5-4-3 0-5 2-5 4z"/><path d="M37 32c3 0 5-2 5-4-3 0-5 2-5 4z"/></svg>Best Short Film 2021 · Layatharang</p>
         <h3 class="project-title">Sughamaano</h3>
+        <div class="project-meta"><span>2021</span><span>Malayalam</span><span>10 min</span><span>Shot on a phone</span></div>
         <p>This 10 minute Malayalam short was made during the lockdown time when Covid hit and we had an online arts festival.</p>
         <p>Inspired from a poem, this silly short was a product of the dire times and was solely shot at my old ancestral house in Kerala using my mobile phone. It was performed by me due to the curfew in place at the time.</p>
       </div>
       <div class="project-images">
-        <img
-          src="images/f2c636ed5fb04321afecc0a3260297b0.png"
-          alt="Sughamaano — title card"
-          loading="lazy"
-        >
-        <img
-          src="images/3625c594557c4156811033b283bea3a1.jpg"
-          alt="Sughamaano — film still"
-          loading="lazy"
-        >
+        <a class="project-video" href="https://youtu.be/DNFC_QfXgl0" target="_blank" rel="noopener" aria-label="Watch Sughamaano on YouTube (13:23)">
+          <img src="images/74b3bd6f74cb4a8c8609e99c4a0d7e01.jpg" alt="Sughamaano title card over a blue sky" loading="lazy">
+          <span class="project-video-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span>
+          <span class="project-video-label">Watch the film · 13:23</span>
+        </a>
+        <img src="images/f2c636ed5fb04321afecc0a3260297b0.png" alt="Sughamaano — film still" loading="lazy">
+        <img src="images/3625c594557c4156811033b283bea3a1.jpg" alt="Sughamaano — film still" loading="lazy">
       </div>
     </div>
 
-    <!-- Project 2: Nidal -->
-    <div class="project-block">
+    <!-- Project: Nidal (text on the right) -->
+    <div class="project-block project-block--flip">
       <div class="project-text">
-        <span class="project-badge">Best Short Film 2022 · Layatharang</span>
+        <p class="project-award"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M16 8C8 14 7 30 16 40"/><path d="M32 8c8 6 9 22 0 32"/><path d="M12 16c-3 0-5-2-5-4 3 0 5 2 5 4z"/><path d="M10 24c-3 0-5-2-5-4 3 0 5 2 5 4z"/><path d="M11 32c-3 0-5-2-5-4 3 0 5 2 5 4z"/><path d="M36 16c3 0 5-2 5-4-3 0-5 2-5 4z"/><path d="M38 24c3 0 5-2 5-4-3 0-5 2-5 4z"/><path d="M37 32c3 0 5-2 5-4-3 0-5 2-5 4z"/></svg>Best Short Film 2022 · Layatharang</p>
         <h3 class="project-title">Nidal<br>&amp;<br>the Unshakable Burden of Existence</h3>
+        <div class="project-meta"><span>2022</span><span>Malayalam · subtitled</span><span>Assoc. director</span><span>DoP</span></div>
         <p>This short film (Malayalam – subtitled) was done in my last year of college (2022). This was a passion project with my friends that took 3 months to come into existence. I was the associate director and director of photography for this project.</p>
       </div>
-      <div class="project-images">
-        <img
-          src="images/74b3bd6f74cb4a8c8609e99c4a0d7e01.jpg"
-          alt="Nidal — colourful busts poster"
-          loading="lazy"
-        >
-        <img
-          src="images/f71c1f7cf7e4461d9214abd8bc76ade2.webp"
-          alt="Nidal — the Unshakable Burden of Existence poster"
-          loading="lazy"
-        >
+      <div class="project-images project-images--nidal">
+        <a class="project-video" href="https://www.youtube.com/watch?v=TNhDzMygktc" target="_blank" rel="noopener" aria-label="Watch Nidal and the Unshakable Burden of Existence on YouTube (18:18)">
+          <img src="images/nidal-youtube-thumb.jpg" alt="Nidal and the Unshakable Burden of Existence, video thumbnail" loading="lazy">
+          <span class="project-video-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span>
+          <span class="project-video-label">Watch the film · 18:18 · Eng subs</span>
+        </a>
+        <img src="images/f71c1f7cf7e4461d9214abd8bc76ade2.webp" alt="Nidal — the Unshakable Burden of Existence poster" loading="lazy">
       </div>
     </div>
 
@@ -335,34 +361,32 @@
 
 <!-- ═══════════════════════════════════════════
      WRITING & BLOGS
-     To edit: update intro text, blog excerpt,
-     and the external links (Substack, lostinnoir).
+     To edit: update the two outlet cards and
+     the featured excerpt.
 ═══════════════════════════════════════════ -->
 <section class="section--cream" id="writing">
   <div class="container">
     <h2 class="section-heading">Writing and Blogs</h2>
 
-    <div class="writing-intro">
-      <p>
-        I used to be a writer on
-        <a href="https://lostinnoir.com/" target="_blank" rel="noopener">lostinnoir.com</a>
-        where I used to do deep-dives on movies and shows I enjoyed watching.
-      </p>
-      <p>
-        I also have a
-        <a href="https://substack.com/@rohitrkmr" target="_blank" rel="noopener">substack</a>
-        profile where I find my space to reflect on the pop-culture that engages me.
-      </p>
+    <div class="writing-outlets">
+      <a class="outlet-card" href="https://lostinnoir.com/author/rohitrkmr/" target="_blank" rel="noopener">
+        <p class="outlet-label">Film &amp; TV deep-dives</p>
+        <p class="outlet-title">lostinnoir.com <span>↗</span></p>
+        <p class="outlet-desc">I used to be a writer here, doing deep-dives on movies and shows I enjoyed watching.</p>
+      </a>
+      <a class="outlet-card" href="https://substack.com/@rohitrkmr" target="_blank" rel="noopener">
+        <p class="outlet-label">Pop-culture reflections</p>
+        <p class="outlet-title">Substack <span>↗</span></p>
+        <p class="outlet-desc">My space to reflect on the pop-culture that engages me.</p>
+      </a>
     </div>
 
     <!-- Featured excerpt — replace with any paragraph from your writing -->
     <div class="blog-excerpt">
+      <p class="excerpt-label">From lostinnoir.com</p>
       <blockquote>
         "Conan and his oddball team of writers headed by Robert Smigel, infused a sense of anarchy and goofiness into the traditional format, which was one of the obvious reasons why it became a hit among college students. These caffeine inebriated species who were up at odd hours of the night were witnessing something unique, which was only on TV because no one else was regulating it. It felt as if friends were hanging out in a garage and just making themselves laugh by using whatever they could around them. This irreverent playground style of comedy created timelessly funny bits such as Triumph, the Ghost Crooner, and the Morbid Lullabies."
       </blockquote>
-      <a href="https://lostinnoir.com/" target="_blank" rel="noopener" class="read-more">
-        Read more on lostinnoir.com →
-      </a>
     </div>
 
   </div>
@@ -371,50 +395,29 @@
 
 <!-- ═══════════════════════════════════════════
      SKILLS
-     To edit: update list items and app icons.
-     App icon images can be replaced with
-     local PNG/SVG files.
+     To edit: update the skill cards and swap
+     app icon images.
 ═══════════════════════════════════════════ -->
 <section class="section--tan-lt" id="skills">
   <div class="container">
     <h2 class="section-heading section-heading--red">Skills</h2>
-    <p class="section-sub">Familiar applications</p>
 
     <div class="skills-layout">
       <ul class="skills-list">
-        <li>Photography &amp; Cinematography</li>
-        <li>Drone work</li>
-        <li>Video Editing</li>
-        <li>Color Grading</li>
-        <li>Writing</li>
-        <li>Content Creation</li>
+        <li><span class="skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></span>Photography &amp; Cinematography</li>
+        <li><span class="skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="6" height="6" rx="1.5"/><path d="M9 9L7 7"/><path d="M15 9l2-2"/><path d="M9 15l-2 2"/><path d="M15 15l2 2"/><circle cx="5.5" cy="5.5" r="2.5"/><circle cx="18.5" cy="5.5" r="2.5"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>Drone work</li>
+        <li><span class="skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 7.5L20 18"/><path d="M8.5 16.5L20 6"/></svg></span>Video Editing</li>
+        <li><span class="skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 4v6"/><path d="M5.5 16l5-3"/><path d="M18.5 16l-5-3"/></svg></span>Color Grading</li>
+        <li><span class="skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 7l3 3"/></svg></span>Writing</li>
+        <li><span class="skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 9.5v5l4-2.5z"/></svg></span>Content Creation</li>
       </ul>
 
       <div class="app-icons">
-        <img
-          src="images/fe48041d888e4ce798ff1a32a119eb62.png"
-          alt="DaVinci Resolve"
-          title="DaVinci Resolve"
-          loading="lazy"
-        >
-        <img
-          src="images/d04467e14f884f63a7183d8689bc6aa4.png"
-          alt="Adobe Premiere Pro"
-          title="Adobe Premiere Pro"
-          loading="lazy"
-        >
-        <img
-          src="images/1219eb3f78d94716b788c371ec51d972.png"
-          alt="Adobe Lightroom"
-          title="Adobe Lightroom"
-          loading="lazy"
-        >
-        <img
-          src="images/4dfc9662abb341d8b98334f6859c64ec.png"
-          alt="Adobe Photoshop"
-          title="Adobe Photoshop"
-          loading="lazy"
-        >
+        <img src="images/icon-resolve.png" alt="DaVinci Resolve" title="DaVinci Resolve" loading="lazy">
+        <img src="images/icon-premiere.png" alt="Adobe Premiere Pro" title="Adobe Premiere Pro" loading="lazy">
+        <img src="images/icon-after-effects.png" alt="Adobe After Effects" title="Adobe After Effects" loading="lazy">
+        <img src="images/icon-lightroom.png" alt="Adobe Lightroom" title="Adobe Lightroom" loading="lazy">
+        <img src="images/icon-photoshop.png" alt="Adobe Photoshop" title="Adobe Photoshop" loading="lazy">
       </div>
     </div>
 
@@ -428,32 +431,38 @@
      Icons are inline SVGs — no external deps.
 ═══════════════════════════════════════════ -->
 <footer class="site-footer">
+  <h2 class="footer-heading">Let’s talk.</h2>
+
   <div class="social-links">
 
     <!-- Instagram -->
     <a href="https://www.instagram.com/rohit_rkmr" target="_blank" rel="noopener" aria-label="Instagram">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <span class="social-label" aria-hidden="true">Instagram</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
       </svg>
     </a>
 
     <!-- LinkedIn -->
     <a href="https://in.linkedin.com/in/rohitrkmr" target="_blank" rel="noopener" aria-label="LinkedIn">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <span class="social-label" aria-hidden="true">LinkedIn</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
       </svg>
     </a>
 
     <!-- Flickr -->
     <a href="https://www.flickr.com/photos/147185159@N08/" target="_blank" rel="noopener" aria-label="Flickr">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <span class="social-label" aria-hidden="true">Flickr</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M0 12c0 3.074 2.494 5.568 5.568 5.568S11.136 15.074 11.136 12 8.642 6.432 5.568 6.432 0 8.926 0 12zm12.864 0c0 3.074 2.494 5.568 5.568 5.568S24 15.074 24 12s-2.494-5.568-5.568-5.568-5.568 2.494-5.568 5.568z"/>
       </svg>
     </a>
 
     <!-- YouTube -->
     <a href="https://www.youtube.com/@rohitr2554" target="_blank" rel="noopener" aria-label="YouTube">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <span class="social-label" aria-hidden="true">YouTube</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
       </svg>
     </a>
@@ -462,8 +471,78 @@
 
   <p class="footer-email">
     <a href="mailto:rohitrkmr.mec@gmail.com">rohitrkmr.mec@gmail.com</a>
+    <button type="button" class="copy-email" id="copy-email" data-email="rohitrkmr.mec@gmail.com" aria-label="Copy email address">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>
+      <span>Copy</span>
+    </button>
   </p>
 </footer>
+
+
+<!-- ═══════════════════════════════════════════
+     FLOATING WORKLOG BUTTON
+     Hidden until you scroll past the header,
+     then floats in the top-right corner.
+     To edit: change the label text below.
+═══════════════════════════════════════════ -->
+<a href="worklog.html" class="floating-cta" id="floating-cta">
+  Jump to Worklog
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+</a>
+
+<script>
+  // Show the floating Worklog button once the header has scrolled away.
+  (function () {
+    var cta = document.getElementById('floating-cta');
+    var header = document.querySelector('.site-header');
+    function update() {
+      var threshold = header ? header.offsetTop + header.offsetHeight : 120;
+      cta.classList.toggle('is-hidden', window.scrollY <= threshold);
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+
+  // Copy the email address; the button says "Copied!" for a moment.
+  (function () {
+    var btn = document.getElementById('copy-email');
+    if (!btn) return;
+    var label = btn.querySelector('span');
+    var email = btn.getAttribute('data-email');
+    var timer;
+    function done() {
+      btn.classList.add('is-copied');
+      label.textContent = 'Copied!';
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        btn.classList.remove('is-copied');
+        label.textContent = 'Copy';
+      }, 1800);
+    }
+    function fallback() {
+      try {
+        var t = document.createElement('textarea');
+        t.value = email;
+        t.setAttribute('readonly', '');
+        t.style.position = 'fixed';
+        t.style.opacity = '0';
+        document.body.appendChild(t);
+        t.select();
+        document.execCommand('copy');
+        t.remove();
+      } catch (e) {}
+      done();
+    }
+    btn.addEventListener('click', function () {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(done, fallback);
+      } else {
+        fallback();
+      }
+    });
+  })();
+</script>
 
 </body>
 </html>
