@@ -455,3 +455,20 @@ a:hover { color: var(--color-red); }
 .media-pair--photos a { display: block; }
 .media-pair--photos img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 4px; display: block; }
 .credit-title a { color: inherit; }
+
+/* ══════════════════════════════
+   RESPONSIVE HARDENING
+══════════════════════════════ */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { overflow-wrap: break-word; }
+img, video { max-width: 100%; }
+.frame h2 { overflow-wrap: anywhere; }
+.ep-link { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+/* Phones: video and photo pairs go one per row so thumbnails stay readable;
+   the vertical reel and its tile stay side by side. */
+@media (max-width: 480px) {
+  .media-pair:not(.media-pair--reel) { grid-template-columns: minmax(0, 1fr); }
+  .media-pair--poster > img, .media-pair--landscape > img { max-width: 360px; }
+  .media-label { font-size: 11px; padding: 8px 10px; }
+  .frame h2 { font-size: 26px; }
+}
