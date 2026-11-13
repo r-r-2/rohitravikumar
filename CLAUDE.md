@@ -14,6 +14,7 @@ worklog.html  — the worklog: a numbered feed of projects with year/role filter
 worklog-nidal.html — a full story page for one worklog frame (copy it for more)
 worklog.css   — styles for the worklog pages (same colours and fonts as styles.css)
 worklog.js    — worklog filters and "collapse media"; plain JS, no build step
+motion.js     — scroll-reveal and stagger animations for both pages; off for reduced-motion visitors. The CSS lives in the MOTION blocks of styles.css and worklog.css
 ```
 
 The home page has a floating **Worklog** button (bottom of `index.html`, styles under

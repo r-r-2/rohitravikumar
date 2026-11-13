@@ -987,3 +987,54 @@ img, video, svg { max-width: 100%; }
 @media (max-height: 500px) and (orientation: landscape) {
   .hero-photos-grid { height: 80vh; }
 }
+
+/* ══════════════════════════════
+   MOTION
+   Elements rise gently into view as you scroll (motion.js adds the
+   classes). Turned off for visitors who ask for reduced motion.
+══════════════════════════════ */
+.motion [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+.motion [data-reveal].is-in { opacity: 1; transform: none; will-change: auto; }
+@media (prefers-reduced-motion: reduce) {
+  .motion [data-reveal] { opacity: 1; transform: none; transition: none; }
+}
+/* Page load: the name and icon settle in */
+@keyframes rise-in { from { opacity: 0; transform: translate3d(0, 14px, 0); } to { opacity: 1; transform: none; } }
+.site-title-link { animation: rise-in .9s cubic-bezier(.2,.7,.2,1) both; }
+
+/* Hover: cards lift, photos ease in a touch */
+.about-card, .gear-card, .collab-card, .outlet-card, .skills-list li, .channel-card {
+  transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease, background-color .3s ease;
+}
+@media (hover: hover) {
+  .about-card:hover, .gear-card:hover, .collab-card:hover, .skills-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(45, 8, 8, 0.10);
+  }
+  .channel-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25); opacity: 1; }
+  .photo-collage img, .gear-photo img, .project-images > img, .project-video img, .channel-card img {
+    transition: transform .9s cubic-bezier(.2,.7,.2,1), filter .6s ease;
+  }
+  .photo-collage img:hover, .project-images > img:hover { filter: brightness(1.08) saturate(1.08); }
+  .gear-card:hover .gear-photo img, .project-video:hover img, .channel-card:hover img { transform: scale(1.05); }
+  .app-icons img { transition: transform .35s cubic-bezier(.2,.7,.2,1); }
+  .app-icons img:hover { transform: translateY(-4px) rotate(-3deg); }
+  .collab-link, .copy-email { transition: background-color .2s ease, transform .2s ease, color .2s ease, border-color .2s ease, opacity .25s ease, visibility 0s linear 0s; }
+  .collab-link:hover { transform: translateY(-1px); }
+}
+.gear-photo { overflow: hidden; }
+/* Timeline dots pop in with their entry */
+.motion .timeline-item[data-reveal]::before { transform: scale(0); transition: transform .5s cubic-bezier(.3,1.6,.5,1) calc(var(--reveal-delay, 0ms) + 250ms); }
+.motion .timeline-item[data-reveal].is-in::before { transform: scale(1); }
+@media (prefers-reduced-motion: reduce) {
+  .site-title-link { animation: none; }
+  .about-card, .gear-card, .collab-card, .outlet-card, .skills-list li, .channel-card,
+  .photo-collage img, .gear-photo img, .project-images > img, .project-video img, .channel-card img, .app-icons img { transition: none !important; transform: none !important; }
+  .motion .timeline-item[data-reveal]::before { transform: none; transition: none; }
+}
